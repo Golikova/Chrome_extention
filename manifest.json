@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "News Analizer Plugin",
+    "description": "This extension will analyze a page using GTmetrix",
+    "version": "1.0",
+ 
+    "browser_action": {
+        "default_icon": "newspaper.png",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+    "activeTab",
+    "<all_urls>"
+]
+}
