@@ -6,11 +6,13 @@
     "version": "1.0",
  
     "browser_action": {
-        "default_icon": "newspaper.png",
+        "default_icon": "/img/text.png",
         "default_popup": "popup.html"
     },
 
     "permissions": [
+    "cookies",
+    "storage",
     "activeTab",
     "<all_urls>"
 ]

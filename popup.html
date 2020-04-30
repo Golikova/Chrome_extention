@@ -1,17 +1,48 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
-    <head>
-    	<link href="style.css" rel="stylesheet">
-	    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	    <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
-        <title>Your news analiser</title>
-        <script src="jquery.js" charset="utf-8"></script>
-       <!-- <script src="fileSaver.js"></script> -->
-        
-    </head>
-    <body>
-        <button id="getDomBtn" class="glow-on-hover" type="button">START!</button>
-        <script src = "getDocument.js"></script>
-       
-    </body>
+<head>
+ <link href="/css/style.css" rel="stylesheet">
+ <link href="/css/loginstyle.css" rel="stylesheet">
+ <link href="/css/checkbox.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+ <link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
+ <title>Your news analiser</title>
+ <script src="/js/jquery.js" charset="utf-8"></script>
+ <script src="/js/auth.js"></script>
+ <script src="/js/storage.js"></script>
+ <script src="/js/prepPopup.js"></script>
+
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  
+    <div class="frame-narrow" name="frame" style="width:300px;">
+<div class="popup-container">
+      <script type="text/javascript" src="/js/displayButton.js">
+      </script>
+
+      <br>
+      <script type="text/javascript" src="/js/displayData.js"></script>
+
+      <button id="getDomBtn" class="glow-on-hover" type="button">ПОИСК!
+      </button>
+      <script src = "/js/getDocument.js"></script>
+
+      <div class="container-checkbox">
+        <ul class="ks-cboxtags">
+          <li><input name="source" class="sourceCheckbox" type="checkbox" id="checkboxGoogle" value="google"><label class="chekbox-label" for="checkboxGoogle">Google</label></li>
+          <li><input name="source" class="sourceCheckbox" type="checkbox" id="checkboxYandex" value="yandex" ><label class="chekbox-label" for="checkboxYandex">Яндекс</label></li>
+          <li><input name="source" class="sourceCheckbox" type="checkbox" id="checkboxWiki" value="wiki" ><label class="chekbox-label" for="checkboxWiki">Wiki</label></li> 
+          <li><input name="source" class="sourceCheckbox" type="checkbox" id="checkboxVk" value="vk"><label class="chekbox-label" for="checkboxVk">Вконтакте</label></li>
+          <!-- <li><input name="source" class="sourceCheckbox" type="checkbox" id="checkboxFacebook" value="facebook"><label class="chekbox-label" for="checkboxFacebook">Facebook</label></li> -->
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
 </html>
